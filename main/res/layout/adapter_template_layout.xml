@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/foto_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/user"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dia dan mereka" />
+
+                <TextView
+                    android:id="@+id/lokasi_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bioskop Kelud" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/pleasewait"
+            android:layout_margin="5dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/tombol_like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/insights_like"
+                    android:gravity="left"
+
+                    />
+                <ImageView
+                    android:id="@+id/tombol_comment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/insights_comment"
+                    android:gravity="left"
+
+                    />
+                <ImageView
+                    android:id="@+id/tombol_dm"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_direct_message"
+                    android:gravity="left"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="right"
+
+                >
+                <ImageView
+                    android:id="@+id/tombol_save"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_profile_save"
+                    android:gravity="right"
+
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_live_like"
+
+
+            />
+        <TextView
+            android:id="@+id/user_like"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="aku, kamu, dan kua"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/status_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="statusmu bos"
+            android:textColor="#000000"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
